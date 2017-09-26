@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<!-- artworkcie.space    Front Page-->
+	
+	
+	<head>
+		<!-- Characters used = UTF-8 -->
+		<meta charset="UTF-8">
+		
+		<!-- Using the style.css file for styling -->
+		<link rel="stylesheet" href="style.css" />
+		
+		<!-- Javascript files -->
+		
+		<script src="libraries/p5.js"                 type="text/javascript"></script>
+		<script src="libraries/p5.dom.js"             type="text/javascript"></script>
+		<script src="index.js"                        type="text/javascript"></script>
+		<script src="Walker.js"                       type="text/javascript"></script>
+		<script src="WalkerGroup.js"                  type="text/javascript"></script>
+		<!-- Title of the tab -->
+		<title> Walking Paint. </title>
+	</head>
+	
+	<!-- Body of the html  -->
+	
+	<body>
+		<!-- Insert any section you want to create or modify down here  -->
+		<section class="Options"> 
+			<p>   Draw by dragging the mouse pressed on the screen. </p>
+			<button id="resetButton"> Reset </button> <br/>
+			<button id="randomButton"> Change randomness </button>
+			<div>
+				<p><strong> Custom Brush </strong> <br/> RGB Selection</p>
+				<label> R </label>
+				<input id="R" type="range" min="0" max="255" value="120"> </input>
+				<br/>
+				<label> G </label>
+				<input id="G" type="range" min="0" max="255" value="120"></input>
+				<br/>
+				<label> B </label>
+				<input id="B" type="range" min="0" max="255" value="120"> </input>
+				<br/>
+				<p> Brush Size</p>
+				<label> Size </label>
+				<input id="size" type="range" min="2" max="500" value="100"> </input>
+				<br/>
+				<button id="customButton"> Confirm Custom</button>
+				<br/>
+			</div>
+			<br/>
+			<input id="checker" type="checkbox" value="Fun"> Walkers activation. <br>
+			
+			<br/>
+		</section>
+	</body>
+	
+	<!-- Other stuff down here, if need be -->
+	
+</html>
