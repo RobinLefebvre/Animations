@@ -1,0 +1,40 @@
+<html>
+	<!-- HEAD START -->
+	<!-- Contains meta tags, js libraries and css  -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- p5 -->
+		<script type="text/javascript" src="./js/libraries/p5/p5.js"></script>
+		<script type="text/javascript" src="./js/libraries/p5/p5.dom.js"></script>
+		<script type="text/javascript" src="./js/libraries/BigNumber.js/bignumber.js"></script>
+		<script type="text/javascript" src="./js/scripts/sketch.js"></script>
+		<!--CUSTOM CSS LOADED AFTER BOOTSTRAP STUFF-->
+		<link rel="stylesheet" href="./css/style.css" /> 
+	</head>
+	<!-- HEAD END -->
+	
+	
+	<!-- BODY START -->
+	<!-- Contains template sketch link -->
+	<body>
+		<h3> JSON Fibonnaci maker. </h1>
+		<h4> This program calculates the Fibonnaci sequence, and stores it into an array. </h4>
+		<p> Update unnecessary interface ? <input type="checkbox" id="updateUI" checked> Unchecking this makes a world of difference (less DOM manipulation)</p>
+		<p> Save the JSON to your computer ?  <input type="checkbox" id="isSaving"> </p>
+		<p> Save the whole sequence ? <input type="checkbox" id="saveSequence"><br/>
+		- If this box is left unchecked, you will only get the last number calculated.<br/>
+		- Saving the whole sequence on my end works until around 20'000 occurences. 39.9Mo file saved.<br/>
+		- Unchecked, I haven't reached the limit just yet. 50'000th is 10Ko.</p>
+		<p> Save once every <input type="text" id="saveInput" value="1000"> occurences.<br/>
+		Note : You may want to change this in the HTML and restart, rather than change it by hand.</p>
+		<h3> Current calculations </h3>
+		<p id="IndexDisplay"></p>
+		<p id="FibDisplay"></p>  
+		<p id="FrameRateDisplay"></p> 
+		<p> Compute <input type="text" id="saveAmount" value="1"> number per frame. If your frameRate drops massively, this number will slowly reduce itself down. Note : uncheck the interface display for optimal results. 50 seems like a softspot to start with.</p>
+		<h4> Feel free to improve on the algorithm's speed and share your results with me </h4>
+	</body>
+	<!-- BODY END -->
+	
+</html>
